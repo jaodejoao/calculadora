@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="display">
+                <div class="historico"></div>
+                <div id="resultado"></div>
+            </div>
+            <div class="teclado">
+                <!-- Somas -->
+                <button class="botao operador" onclick="clean()">C</button>
+                <button class="botao operador" onclick="back()">⌫</button>
+                <button class="botao operador" onclick="insert('/')">/</button>
+                <button class="botao operador" onclick="insert('*')">×</button>
+                <!-- 7 A 9 -->
+                <button class="botao" onclick="insert('7')">7</button>
+                <button class="botao" onclick="insert('8')">8</button>
+                <button class="botao" onclick="insert('9')">9</button>
+                <button class="botao operador" onclick="insert('-')">-</button>
+                <!-- 4 A 6 -->
+                <button class="botao" onclick="insert('4')">4</button>
+                <button class="botao" onclick="insert('5')">5</button>
+                <button class="botao" onclick="insert('6')">6</button>
+                <button class="botao operador" onclick="insert('+')">+</button>
+                <!-- 1 A 3 -->
+                <button class="botao" onclick="insert('1')">1</button>
+                <button class="botao" onclick="insert('2')">2</button>
+                <button class="botao" onclick="insert('3')">3</button>
+                <button class="botao operador igual" onclick="calcular()">=</button>
+                <!-- 0 -->
+                <button class="botao zero" onclick="insert('0')">0</button>
+                <button class="botao" onclick="insert('.')">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+}
+
+.calculadora {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.display {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.historico {
+    min-height: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 5px;
+}
+
+#resultado {
+    font-size: 36px;
+    color: white;
+    min-height: 45px;
+    word-wrap: break-word;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botao {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.operador {
+    background: rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(109, 213, 237, 0.5);
+}
+
+.operador:hover {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 15px rgba(109, 213, 237, 0.3);
+}
+
+.igual {
+    grid-row: span 2;
+    background: #6dd5ed;
+    color: white;
+    font-size: 28px;
+}
+
+.igual:hover {
+    background: #5cc5dd;
+}
+
+.zero {
+    grid-column: span 2;
+} 
